@@ -630,6 +630,7 @@ header {
     margin-bottom: 15px;
   }
   .skills-head {
+    font-weight: 600;
     font-size: 48px;
     margin-top: 100px;
     margin-bottom: 100px;
