@@ -136,7 +136,7 @@ header {
   }
 
   .nav__links {
-    display: none; /* Hide nav links by default */
+    display: none;
   }
 
   .nav__links.open {
