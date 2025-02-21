@@ -86,7 +86,7 @@ header {
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Hidden in desktop view */
+  display: none;
   position: absolute; /* Position independently */
   right: 20px; /* Align to the right edge */
   top: 20px; /* Adjust vertical alignment */
