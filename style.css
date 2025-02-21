@@ -1260,7 +1260,7 @@ p {
 }
 
 .contact-form .btn {
-  width: 100%; /* Make button take full width */
+  width: 100%;
   padding: 15px;
   background-color: #00f0ff;
   color: indigo; /*color: #ffffff; */
