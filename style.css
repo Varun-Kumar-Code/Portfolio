@@ -149,7 +149,7 @@ header {
   }
 
   .nav__links li {
-    margin: 10px 0; /* Add some spacing between links */
+    margin: 10px 0;
   }
 
   .intro {
@@ -160,7 +160,7 @@ header {
   .intro-text {
     order: 2;
     text-align: center; /* Center-align text for better mobile layout */
-    margin: 0; /* Remove margin */
+    margin: 0;
   }
 
   .intro-text h1 {
