@@ -87,7 +87,7 @@ header {
   border: none;
   cursor: pointer;
   display: none;
-  position: absolute; /* Position independently */
+  position: absolute;
   right: 20px; /* Align to the right edge */
   top: 20px; /* Adjust vertical alignment */
   z-index: 11; /* Ensure it appears above other elements */
