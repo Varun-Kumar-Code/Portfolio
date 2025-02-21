@@ -126,7 +126,7 @@ header {
 /*UPDATED*/
 .nav__links.open {
   display: flex;
-  flex-direction: column; /* Stack links vertically in mobile */
+  flex-direction: column;
   align-items: flex-end; /* Align links to the right */
 }
 
