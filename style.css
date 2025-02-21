@@ -127,7 +127,7 @@ header {
 .nav__links.open {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Align links to the right */
+  align-items: flex-end;
 }
 
 @media (max-width: 768px) {
