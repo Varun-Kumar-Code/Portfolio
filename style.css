@@ -132,7 +132,7 @@ header {
 
 @media (max-width: 768px) {
   .nav__menu__btn {
-    display: block; /* Show the menu button in mobile view */
+    display: block;
   }
 
   .nav__links {
