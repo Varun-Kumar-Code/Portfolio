@@ -481,7 +481,7 @@ header {
 }
 
 .about-text {
-  flex: 1; /* It allows text to take available space */
+  flex: 1;
   max-width: 650px;
 }
 
