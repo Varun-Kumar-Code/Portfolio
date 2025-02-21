@@ -143,7 +143,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Ensure they are fully centered */
+    justify-content: center;
     padding: 1rem;
     width: 100%;
   }
