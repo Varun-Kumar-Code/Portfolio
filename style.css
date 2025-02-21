@@ -67,7 +67,7 @@ nav {
 header {
   display: flex;
   align-items: center;
-  width: 100%; /* Ensure the header takes up the full width */
+  width: 100%;
   padding: 20px;
 }
 
