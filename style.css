@@ -89,7 +89,7 @@ header {
   display: none;
   position: absolute;
   right: 20px;
-  top: 20px; /* Adjust vertical alignment */
+  top: 20px;
   z-index: 11; /* Ensure it appears above other elements */
 }
 
