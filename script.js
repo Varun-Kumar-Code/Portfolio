@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
             navLinks.classList.toggle("open");
             const menuBtnIcon = menuBtn.querySelector("i");
             if (menuBtnIcon) {
-                menuBtnIcon.className = navLinks.classList.contains("open") 
-                    ? "ri-close-line" 
+                menuBtnIcon.className = navLinks.classList.contains("open")
+                    ? "ri-close-line"
                     : "ri-menu-line";
             }
         });
@@ -70,12 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
             mirror: false  // Don't mirror animation on scroll up
         });
     }
-    
+
     // Call aosInit function after the page has loaded
-    window.onload = function() {
+    window.onload = function () {
         aosInit(); // This will initialize AOS animations
     };
-    
+
     function imgInit() {
         AOS.init({
             distance: "50px",
@@ -83,11 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
             duration: 1000,
         });
     }
-    
-    window.onload = function() {
+
+    window.onload = function () {
         imgInit(); // This will initialize AOS animations
     };
-    
+
     // Animate Progress Bars
     const progressBars = document.querySelectorAll('.progress-done');
 
@@ -171,13 +171,13 @@ document.oncontextmenu = () => {
 
 document.onkeydown = e => {
     //Prevent F12 key
-    if(e.key == "F12"){
+    if (e.key == "F12") {
         alert("Don't try to inspect element")
         return false
     }
 
     //Prevent showing page source by ctrl + U
-    if(e.ctrlKey && e.key == "u") {
+    if (e.ctrlKey && e.key == "u") {
         alert("Don't try to view page sources")
         return false
     }
