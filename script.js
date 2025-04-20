@@ -163,12 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-//Prevent righ click
-document.oncontextmenu = () => {
-    alert("Don't try right click")
-    return false
-}
-
 document.addEventListener("keydown", function(e) {
     // Disable Ctrl+Shift+I or Ctrl+Shift+J
     if ((e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
