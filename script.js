@@ -169,22 +169,14 @@ document.oncontextmenu = () => {
     return false
 }
 
-document.onkeydown = e => {
-    //Prevent F12 key
-    if (e.key == "F12") {
-        alert("Don't try to inspect element")
-        return false
+document.addEventListener("keydown", function(e) {
+    // Disable Ctrl+Shift+I or Ctrl+Shift+J
+    if ((e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+        // Disable F12
+        e.key === "F12" ||
+        // Disable Ctrl+U (view source)
+        (e.ctrlKey && e.key === "u")) {
+        alert("Don't try to view developer tools");
+        e.preventDefault();
     }
-
-    //Prevent showing page source by ctrl + U
-    if (e.ctrlKey && e.key == "u") {
-        alert("Don't try to view page sources")
-        return false
-    }
-
-    //Prevent showing developer tools by shift + ctrl + I
-    if (e.shiftKey && e.ctrlKey && e.key == "i") {
-        alert("Don't try to view developer tools")
-        return false
-    }
-}   
+});
