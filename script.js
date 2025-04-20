@@ -181,4 +181,10 @@ document.onkeydown = e => {
         alert("Don't try to view page sources")
         return false
     }
-}
+
+    //Prevent showing developer tools by shift + ctrl + I
+    if (e.shiftKey && e.ctrlKey && e.key == "i") {
+        alert("Don't try to view developer tools")
+        return false
+    }
+}   
