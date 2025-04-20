@@ -163,14 +163,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-document.addEventListener("keydown", function(e) {
-    // Disable Ctrl+Shift+I or Ctrl+Shift+J
-    if ((e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
-        // Disable F12
-        e.key === "F12" ||
-        // Disable Ctrl+U (view source)
-        (e.ctrlKey && e.key === "u")) {
-        alert("Don't try to view developer tools");
-        e.preventDefault();
+//Prevent righ click
+document.oncontextmenu = () => {
+    alert("Don't try right click")
+    return false
+}
+
+document.onkeydown = e => {
+    //Prevent F12 key
+    if (e.key == "F12") {
+        alert("Don't try to inspect element")
+        return false
     }
-});
+
+    //Prevent showing page source by ctrl + U
+    if (e.ctrlKey && e.key == "u") {
+        alert("Don't try to view page sources")
+        return false
+    }
+}   
