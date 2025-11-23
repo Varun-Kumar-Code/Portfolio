@@ -161,8 +161,9 @@ document.addEventListener("DOMContentLoaded", () => {
             button.style.setProperty("--mouse-y", `50%`);
         });
     }
-});
+});  
 
+/*
 //Prevent righ click
 document.oncontextmenu = () => {
     alert("Don't try right click")
@@ -181,4 +182,6 @@ document.onkeydown = e => {
         alert("Don't try to view page sources")
         return false
     }
-}   
+}
+*/
+

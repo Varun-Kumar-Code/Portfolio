@@ -42,17 +42,17 @@
             "https://varun-kumar.is-a.dev/VarunKumarR.png"
         ]
         "sameAs": [
-            "https://varun-kumar.vercel.app",
-            "https://www.linkedin.com/in/varun-kumar-in/",
-            "https://github.com/Varun-Kumar-Code",
-            "https://www.behance.net/varunkumar403",
-            "https://www.instagram.com/itz_varun_official/",
-            "https://x.com/VarunKOfficial"
+        "https://varun-kumar.vercel.app",
+        "https://www.linkedin.com/in/varun-kumar-in/",
+        "https://github.com/Varun-Kumar-Code",
+        "https://www.behance.net/varunkumar403",
+        "https://www.instagram.com/itz_varun_official/",
+        "https://x.com/VarunKOfficial"
         ],
         "jobTitle": "Full-Stack Developer, UI/UX Designer",
         "worksFor": {
-            "@type": "EducationalOrganization",
-            "name": "Hindustan University"
+        "@type": "EducationalOrganization",
+        "name": "Hindustan University"
         }
     }
     </script>
@@ -81,18 +81,18 @@
                             < </span> Varun
                                 <span style="color: #3165f4;"> > </span></a>
                 </div>
+                <ul class="nav__links" id="nav-links">
+                    <li class="link"><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li class="link"><a href="about.html" title="Learn more about Varun Kumar R"><i class="fas fa-user"></i><span>About</span></a></li>
+                    <li class="link"><a href="index.html#services"><i class="fas fa-cogs"></i><span>Services</span></a></li>
+                    <li class="link"><a href="index.html#skills"><i class="fas fa-code"></i><span>Skills</span></a></li>
+                    <li class="link"><a href="projects.html"><i class="fas fa-folder-open"></i><span>Projects</span></a></li>
+                    <li class="link"><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+                </ul>
                 <div class="nav__menu__btn" id="menu-btn">
                     <i class="ri-menu-line"></i>
                 </div>
             </div>
-            <ul class="nav__links" id="nav-links">
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link"><a href="about.html" title="Learn more about Varun Kumar R">About</a></li>
-                <li class="link"><a href="index.html">Services</a></li>
-                <li class="link"><a href="index.html">Skills</a></li>
-                <li class="link"><a href="projects.html">Projects</a></li>
-                <li class="link"><a href="contact.html">Contact</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -361,24 +361,27 @@
     </button>
 
     <footer>
-        <div class="footer-container">
-            <div class="copyrights">
-                <p>Version</p>
-                <p>2025 &copy; Edition | Designed with ❤️ and code..</p>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 data-aos="fade-right">Varun Kumar R</h3>
+                    <p data-aos="fade-left">Full-Stack Developer & UI/UX Designer</p>
+                </div>
+                <div class="footer-social" data-aos="fade-left">
+                    <a href="https://x.com/VarunKOfficial" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/Varun-Kumar-Code" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/itz_varun_official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/Varun-Kumar-in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
             </div>
-            <div class="social-apps">
-                <p>Social Apps</p>
-                <div class="icon-row">
-                    <a href="https://x.com/VarunKOfficial" target="_blank" rel="noopener noreferrer"><i
-                            class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://github.com/Varun-Kumar-Code" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/itz_varun_official/" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/Varun-Kumar-in/" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-discord"></i></a>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Varun Kumar R. Made with ❤️</p>
+                </div>
+                <div class="footer-links">
+                    <a href="resume.pdf" target="_blank">Download CV</a>
+                    <a href="mailto:enquiretovarun@gmail.com">Get In Touch</a>
                 </div>
             </div>
         </div>
@@ -765,6 +768,26 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        // Back to Top Button Show/Hide Logic
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.top-button');
+            const scrollPosition = window.pageYOffset;
+            
+            if (scrollPosition > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.querySelector('.top-button');
+            if (window.pageYOffset <= 300) {
+                backToTopButton.classList.remove('show');
+            }
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
@@ -777,6 +800,31 @@
                 (window.vaq = window.vaq || []).push(arguments);
             };
     </script>
+    
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-nav">
+        <a href="index.html">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="about.html">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+        </a>
+        <a href="index.html#skills">
+            <i class="fas fa-code"></i>
+            <span>Skills</span>
+        </a>
+        <a href="projects.html" class="active">
+            <i class="fas fa-folder-open"></i>
+            <span>Projects</span>
+        </a>
+        <a href="contact.html">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </div>
+    
     <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
