@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });  
 
-/*
+
 //Prevent righ click
 document.oncontextmenu = () => {
     alert("Don't try right click")
@@ -183,5 +183,4 @@ document.onkeydown = e => {
         return false
     }
 }
-*/
 
